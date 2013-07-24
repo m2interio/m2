@@ -13,6 +13,7 @@
 	
 	<!-- Modernizr -->
   <script src="js/modernizr.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
           <script type="text/javascript">
             $(function() {
                 //graceful degradation
@@ -136,12 +137,13 @@
       </section>
                 <div id="ui_element" class="mh_wrapper">
                     <ul>
-                        <li><a href="#" class="hover">Menu Item A</a></li>
-                        <li><a href="#">Menu Item A B</a></li>
-                        <li><a href="#">Menu Item A C</a></li>
-                        <li><a href="#">Menu Item A AA</a></li>
-                        <li><a href="#">Menu Item A BB</a></li>
-                        <li><a href="#">Menu Item A CC</a></li>
+                        <li><a href="#" class="hover">главная</a></li>
+                        <li><a href="#">проекты</a></li>
+                        <li><a href="#">реализовано</a></li>
+                        <li><a href="#">услуги</a></li>
+                        <li><a href="#">о нас</a></li>
+                        <li><a href="#">партнеры</a></li>
+ 			<li><a href="#">контакты</a></li>
                     </ul>
                     <div class="mh_itemMain">Menu</div>
                     <div class="mh_right"></div>
