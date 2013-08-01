@@ -13,7 +13,8 @@
 	
 	<!-- Modernizr -->
   <script src="js/modernizr.js"></script>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script src='lightbox/js/jquery-1.10.2.min.js'></script>
+
           <script type="text/javascript">
             $(function() {
                 //graceful degradation
@@ -112,24 +113,20 @@
 
     </header>
 
+  <script src="lightbox/js/lightbox-2.6.min.js"></script>
+  <link href="lightbox/css/lightbox.css" rel="stylesheet" />
+
 	<div id="main" role="main">
       <section class="slider">
         <div class="flexslider">
           <ul class="slides">
-            <li><img src="./images/1.jpg" /></li>
-            <li><img src="./images/2.jpg" /></li>
-            <li><img src="./images/3.jpg" /></li>
-            <li><img src="./images/4.jpg" /></li>
-            <li><img src="./images/5.jpg" /></li>
-            <li><img src="./images/1.jpg" /></li>
-            <li><img src="./images/7.jpg" /></li>
-            <li><img src="./images/1.jpg" /></li>
-            <li><img src="./images/2.jpg" /></li>
-            <li><img src="./images/3.jpg" /></li>
-            <li><img src="./images/4.jpg" /></li>
-            <li><img src="./images/5.jpg" /></li>
-            <li><img src="./images/1.jpg" /></li>
-            <li><img src="./images/7.jpg" /></li>
+            <li><a href='./images/1.jpg' data-lightbox='group-1'><img src="./images/1.jpg" /></a></li>
+            <li><a href='./images/2.jpg' data-lightbox='group-1'><img src="./images/2.jpg" /></a></li>
+            <li><a href='./images/3.jpg' data-lightbox='group-1'><img src="./images/3.jpg" /></a></li>
+            <li><a href='./images/4.jpg' data-lightbox='group-1'><img src="./images/4.jpg" /></a></li>
+            <li><a href='./images/5.jpg' data-lightbox='group-1'><img src="./images/5.jpg" /></a></li>
+            <li><a href='./images/6.jpg' data-lightbox='group-1'><img src="./images/6.jpg" /></a></li>
+            <li><a href='./images/7.jpg' data-lightbox='group-1'><img src="./images/7.jpg" /></a></li>
 
 
           </ul>
@@ -184,9 +181,6 @@
  совмещение стилей, практичность<br />
  и функциональность</div>
 
-  <!-- jQuery -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
   
   <!-- FlexSlider -->
   <script defer src="js/flexslider.js"></script>
