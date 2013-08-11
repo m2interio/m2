@@ -1,0 +1,209 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>m2interio</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	
+  <!-- Syntax Highlighter -->
+	<link href="css/shCore.css" rel="stylesheet" type="text/css" />
+  <link href="css/shThemeDefault.css" rel="stylesheet" type="text/css" />
+  <!-- Demo CSS -->
+	<link rel="stylesheet" href="css/demo.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
+	
+	<!-- Modernizr -->
+  <script src="js/modernizr.js"></script>
+  <script src='lightbox/js/jquery-1.10.2.min.js'></script>
+
+          <script type="text/javascript">
+            $(function() {
+                //graceful degradation
+                $('#ui_element').find('ul').css({
+                    'left'	:	'-660px'
+                }).siblings('.mh_right').css({
+                    'left'	:	'200px'
+                });
+				
+                var $arrow = $('#ui_element').find('.mh_right');
+                var $menu  = $('#ui_element').find('ul');
+                $arrow.bind('mouseenter',function(){
+                    var $this 	= $(this);
+                    $this.stop().animate({'left':'160px'},50);
+                    $menu.stop().animate({'left':'202px'},2000,function(){
+                        $(this).find('a')
+                        .unbind('mouseenter,mouseleave')
+                        .bind('mouseenter',function(){
+                            $(this).addClass('hover');
+                        })
+                        .bind('mouseleave',function(){
+                            $(this).removeClass('hover');
+                        });
+                    });
+                });
+                $('body').click(function(){
+                    var $this 	= $menu;
+                    $this.stop().animate({'left':'-660px'},500,function(){
+                        $arrow.stop().animate({'left':'200px'},500);
+                    });
+                });
+            });
+        </script>
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+        <style>
+            *{
+                padding:0;
+                margin:0;
+            }
+             body{
+                background-color:#f0f0f0;
+                font-family:"Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+            }
+            h1{
+                font-size:180px;
+                line-height:180px;
+                text-transform: uppercase;
+                color:#ddd;
+                position:absolute;
+                text-shadow:0 1px 0 #fff;
+                top:-25px;
+                left:-20px;
+                white-space: nowrap;
+            }
+            span.reference{
+                position:fixed;
+                left:10px;
+                bottom:10px;
+                font-size:11px;
+            }
+            span.reference a{
+                color:#666;
+                text-decoration:none;
+                text-transform: uppercase;
+                text-shadow:0 1px 0 #fff;
+            }
+            span.reference a:hover{
+                color:#ccc;
+            }
+            .box{
+                border:15px solid #fff;
+                margin:180px 0px 0px -15px;
+                height:240px;
+                position:relative;
+                padding:30px 10px 30px 50px;
+                -moz-box-shadow:0px 0px 2px #ccc inset;
+                -webkit-box-shadow:0px 0px 2px #ccc inset;
+                box-shadow:0px 0px 2px #ccc inset;
+                background:#f6f6f6 url(click.png) no-repeat 200px 120px;
+            }
+            .box h2{
+                text-transform: uppercase;
+                color:#ccc;
+                text-shadow:0 1px 0 #fff;
+            }
+        </style>
+</head>
+<body>
+
+
+	<div id="top"><div id="out-logo">
+<img src="./images/logo.png"></div>
+	</div>
+  
+  <div id="container" class="cf">
+
+    </header>
+
+  <script src="lightbox/js/lightbox-2.6.min.js"></script>
+  <link href="lightbox/css/lightbox.css" rel="stylesheet" />
+
+	<div id="main" role="main">
+      <section class="slider">
+        <div class="flexslider">
+          <ul class="slides">
+            <li><a href='./images/real3/2.jpg' data-lightbox='group-1'><img src="./images/real3/2.jpg" /></a></li>
+            
+
+          </ul>
+        </div>
+      </section>
+                <div id="ui_element" class="mh_wrapper">
+                    <ul>
+                        <li><a href="./index.html" class="hover">главная</a></li>
+                        <li><a href="./proj1.html">проекты</a></li>
+                        <li><a href="./real1.html">реализовано</a></li>
+                        <li><a href="./article.html">статьи</a></li>
+                        <li><a href="./prise.html">услуги</a></li>
+                        <li><a href="./about.html">о нас</a></li>
+                        <li><a href="./partners.html">партнеры</a></li>
+ 			<li><a href="./contact.html">контакты</a></li>
+                    </ul>
+                    <div class="mh_itemMain">Menu</div>
+                    <div class="mh_right"></div>
+                </div>
+
+      <aside>
+       <table cellpadding="5">
+<tr>
+<td width="122" style="padding: 20px 0px 20px 0px;"><a href="proj1.html"><img src="1.jpg" title="Маршала катукова 3D" alt="Маршала катукова 3D" /></a></td>
+<td width="122" style="padding: 20px 0px 20px 0px;"><a href="proj2.html"><img src="2.jpg" title="Миллениум парк 3D" alt="Миллениум парк 3D" /></a></td>
+<td width="122" style="padding: 20px 0px 20px 0px;"><a href="proj3.html"><img src="3.jpg" title="Староволынская 3D" alt="Староволынская 3D" /></a></td>
+<td width="122" style="padding: 20px 0px 20px 0px;"><a href="real1.html"><img src="4.jpg" title="Маршала Катукова 21" alt="Маршала Катукова 21" /></a></td>
+<td width="122" style="padding: 20px 0px 20px 0px;"><a href="real2.html"><img src="5.jpg" title="Кочновский 4" alt="Кочновский 4" /></a></td>
+<td width="122" style="padding: 20px 0px 20px 0px;"><a href="real3.html"><img src="6.jpg" title="Староволынская 15" alt="Староволынская 15" /></a></td>
+<td width="122" style="padding: 20px 0px 20px 0px;"><a href="real4.html"><img src="7.jpg" title="Угрешская 32" alt="Угрешская 32" /></a></td>
+<!-- <td width="122" style="padding: 20px 0px 20px 0px;"><a href="#"><img src="8.jpg" /></a></td>
+<td width="122" style="padding: 20px 0px 20px 0px;"><a href="#"><img src="9.jpg" /></a></td>
+</tr>
+<tr>
+
+<td width="122" style="padding: 20px 0px 20px 0px;"><a href="#"><img src="10.jpg" /></a></td>
+<td width="122" style="padding: 20px 0px 20px 0px;"><a href="#"><img src="11.jpg" /></a></td>
+<td width="122" style="padding: 20px 0px 20px 0px;"><a href="#"><img src="12.jpg" /></a></td>
+<td width="122" style="padding: 20px 0px 20px 0px;"><a href="#"><img src="13.jpg" /></a></td> -->
+
+</tr></table>
+      </aside>
+    </div>
+   
+  </div>
+<div id="out-text" style="font-family: sans-serif;">
+&nbsp;<br /><br />
+
+
+M2 interio.<br />
+Мокушина Елена.<br />
+email: mokyshina@mail.ru<br />
+телефоны:  8-915-374-3050 <br />      8-910-423-4191<br />
+<br />
+
+  
+  <!-- FlexSlider -->
+  <script defer src="js/flexslider.js"></script>
+  
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+
+  <!-- Syntax Highlighter -->
+  <script type="text/javascript" src="js/shCore.js"></script>
+  <script type="text/javascript" src="js/shBrushXml.js"></script>
+  <script type="text/javascript" src="js/shBrushJScript.js"></script>
+  
+  <!-- Optional FlexSlider Additions -->
+  <script src="js/jquery.easing.js"></script>
+  <script src="js/jquery.mousewheel.js"></script>
+  <script defer src="js/demo.js"></script>
+  
+</body>
+</html>
